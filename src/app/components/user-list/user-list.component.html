@@ -1,0 +1,20 @@
+
+    <mat-selection-list [multiple]="true">
+        <mat-list-item *ngFor="let user of rawUsers">
+            <div class="list-item">
+                <span>
+                    User: {{user.username}} &nbsp; Email: {{user.email}} &nbsp; 
+                    
+                </span>
+                <div class="verified-items">
+                    Verified:
+                    <div *ngIf="user.verified">
+                        <mat-checkbox [checked]="user.verified" [disabled]="true"></mat-checkbox>
+                    </div>
+                    <div *ngIf="!user.verified">
+                        <mat-checkbox [id]="user.user_id" #checkboxes [checked]="user.verified"></mat-checkbox>
+                    </div>
+                </div>
+            </div></mat-list-item>
+    </mat-selection-list>
+    <button mat-raised-button (click)="sendEmail()">Send Emails</button>

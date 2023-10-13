@@ -1,0 +1,15 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.verified-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0px;
+}

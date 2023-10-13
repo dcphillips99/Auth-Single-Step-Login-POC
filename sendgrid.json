@@ -1,0 +1,2 @@
+const SENDGRID_API_KEY = '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';
+export { SENDGRID_API_KEY };
